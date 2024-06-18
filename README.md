@@ -16,5 +16,5 @@ A pontuação obtida em cada exercício está comentada no início de cada arqui
 
 - **Modalidade:** Programação Nível Sênior
 - **Fase 1**
-    - [**Submissões**](Fase%201)
+    - [**Submissões**](fase_1)
     - **Pontuação:** _400/400_
