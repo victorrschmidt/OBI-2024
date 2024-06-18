@@ -1,3 +1,5 @@
+// 100/100
+
 #include <bits/stdc++.h>
 using namespace std;
 const char nl = '\n';
