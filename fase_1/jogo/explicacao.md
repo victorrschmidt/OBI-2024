@@ -5,9 +5,9 @@
 
 Este é um problema que envolve matrizes.
 
-Precisamos saber qual é o resultado final da matriz após $Q$ transições. Para fazer a transição entre um estado e outro, verificamos para cada célula $c$ a quantidade de vizinhos vivos que esta possui no estado atual.
+Precisamos saber qual é o estado final da matriz após $Q$ transições. Para fazer a transição entre um estado e outro, verificamos para cada célula $c$ a quantidade de vizinhos vivos que esta possui no estado atual.
 
-A função $alive(i,\ j)$ verifica quantos vizinhos vivos uma célula possui a partir da posição $i$ e $j$ da mesma. Cada célula possui $9$ vizinhos (com exceção das células dos cantos). As coordenadas das células vizinhas de uma célula $c$ possuem valores de $i$ e $j$ que variam em função dos valores $i$ e $j$ de $c$, conforme mostrado abaixo (considere $c$ a célula do meio da matriz).
+A função $alive(i,\ j)$ verifica quantos vizinhos vivos uma célula possui a partir da posição $i$ e $j$ da mesma. Cada célula possui $8$ vizinhos (com exceção das células dos cantos). As coordenadas das células vizinhas de uma célula $c$ possuem valores de $i$ e $j$ que variam em função dos valores $i$ e $j$ de $c$, conforme mostrado abaixo (considere $c$ a célula do meio da matriz).
 
 ```math
 \begin{bmatrix}
