@@ -1,7 +1,7 @@
 # Ogro
 
 - A solução resolve todos os casos de teste.
-- Complexidade de tempo: **$O(1)$**
+- Complexidade de tempo: **$O(1)$**.
 
 Este é um problema simples que envolve somente estruturas condicionais e operações matemáticas.
 
