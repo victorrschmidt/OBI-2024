@@ -1,65 +1,61 @@
 # Placas
 
-- A solução resolve todos os casos de teste.
-- Complexidade de tempo: **$O(|S|)$**.
-  - Onde $|S|$ é o tamanho da string.
+- A solução resolve todas as subtarefas.
+- Complexidade de tempo: **$O(1)$**.
 
 Este problema envolve propriedades de strings e caracteres.
 
-Basta verificar se a string lida se encaixa nos parâmetros de alguma placa. Fica mais fácil fazer isso criando uma função para cada uma, que retorna $true$ caso a string se encaixe no padrão da placa.
+Basta verificar se a string lida se encaixa nos parâmetros de alguma placa. Fica mais fácil fazer isso criando uma função para cada uma, ambas retornando $true$ caso a string se encaixe no padrão da placa.
 
 Se a placa não se encaixar em nenhum padrão, fica implícito que ela é falsa.
 
 ## Solução
 
 ```cpp
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
 using namespace std;
-const char nl = '\n';
 
-bool br(string s) {
-    if (s.size() != 8) return false;
-    for (int i = 0; i < 3; i++) {
-        if (s[i] < 'A' || s[i] > 'Z') return false;
+bool brasileira(string placa) {
+    if (placa.size() != 8) return false;
+
+    for (int i = 0; i < 8; i++) {
+        if (i < 3 && (placa[i] < 'A' || placa[i] > 'Z')) return false;
+        else if (i == 3 && placa[i] != '-') return false;
+        else if (i > 3 && (placa[i] < '0' || placa[i] > '9')) return false;
     }
-    if (s[3] != '-') return false;
-    for (int i = 4; i < 8; i++) {
-        if (s[i] < '0' || s[i] > '9') return false;
-    }
+
     return true;
 }
 
-bool merc(string s) {
-    if (s.size() != 7) return false;
-    for (int i = 0; i < 3; i++) {
-        if (s[i] < 'A' || s[i] > 'Z') return false;
+bool mercosul(string placa) {
+    if (placa.size() != 7) return false;
+
+    for (int i = 0; i < 7; i++) {
+        if (i < 3 && (placa[i] < 'A' || placa[i] > 'Z')) return false;
+        else if (i == 3 && (placa[i] < '0' || placa[i] > '9')) return false;
+        else if (i == 4 && (placa[i] < 'A' || placa[i] > 'Z')) return false;
+        else if (i > 4 && (placa[i] < '0' || placa[i] > '9')) return false;
     }
-    if (s[3] < '0' || s[3] > '9') return false;
-    if (s[4] < 'A' || s[4] > 'Z') return false;
-    for (int i = 5; i < 7; i++) {
-        if (s[i] < '0' || s[i] > '9') return false;
-    }
+
     return true;
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    string placa;
+    cin >> placa;
     
-    string s;
-    cin >> s;
-    
-    if (br(s)) {
+    if (brasileira(placa)) {
         cout << 1;
     }
-    else if (merc(s)) {
+    else if (mercosul(placa)) {
         cout << 2;
     }
     else {
         cout << 0;
     }
     
-    cout << nl;
+    cout << '\n';
     
     return 0;
 }
