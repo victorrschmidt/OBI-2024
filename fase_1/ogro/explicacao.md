@@ -1,6 +1,6 @@
 # Ogro
 
-- A solução resolve todos os casos de teste.
+- A solução resolve todas as subtarefas.
 - Complexidade de tempo: **$O(1)$**.
 
 Este é um problema simples que envolve somente estruturas condicionais e operações matemáticas.
@@ -19,18 +19,19 @@ Basta verificar essas condições, e mostrar o resultado.
 ## Solução
 
 ```cpp
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-const char nl = '\n';
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    
     int E, D;
     cin >> E >> D;
     
-    cout << (E > D ? E + D : 2 * (D - E)) << nl;
+    if (E > D) {
+        cout << E + D << '\n';
+    }
+    else {
+        cout << 2 * (D - E) << '\n';
+    }
     
     return 0;
 }
