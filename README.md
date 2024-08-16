@@ -10,8 +10,6 @@
 
 Este repositório contém as submissões das provas da Olimpíada Brasileira de Informática de 2024, onde participei pelo Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - _Campus_ Rio Grande. 
 
-A pontuação obtida em cada exercício está comentada no início de cada arquivo.
-
 # Resumo
 
 - **Modalidade:** Programação Nível Sênior
