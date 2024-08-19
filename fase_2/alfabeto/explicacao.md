@@ -12,6 +12,8 @@ $$a \cup m = a$$
 
 Podemos colocar os caracteres de $alfabeto$ em um _set_, que possui tempo médio constante para consultas.
 
+## Solução
+
 ```cpp
 #include <iostream>
 #include <string>
