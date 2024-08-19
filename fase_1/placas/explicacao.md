@@ -1,4 +1,4 @@
-# Placas
+# Placas de Carro
 
 - A solução resolve todas as subtarefas.
 - Complexidade de tempo: **$O(1)$**.
