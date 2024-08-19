@@ -21,8 +21,9 @@ Podemos colocar os caracteres de $alfabeto$ em um _set_, que possui tempo médio
 using namespace std;
 
 int main() {
+    int K, N;
     string alfabeto, mensagem;
-    cin >> alfabeto >> mensagem;
+    cin >> K >> N >> alfabeto >> mensagem;
 
     set<char> s;
 
