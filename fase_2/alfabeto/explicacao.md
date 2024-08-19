@@ -1,4 +1,4 @@
-# Alfabeto
+# Alfabeto Alienígena
 
 - A solução resolve todas as subtarefas.
 - Complexidade de tempo: **$O(|S|)$**.

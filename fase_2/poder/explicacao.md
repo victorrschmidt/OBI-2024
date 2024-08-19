@@ -1,4 +1,4 @@
-# Poder (solução parcial)
+# Jogo do Poder (solução parcial)
 
 - A solução resolve as subtarefas $1$, $2$, $3$ e $5$ ($44$ pontos).
 - Complexidade de tempo: **$O(N^2 \cdot M^2 \cdot log(N \cdot M))$**.

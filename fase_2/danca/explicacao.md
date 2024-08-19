@@ -1,4 +1,4 @@
-# Dança
+# Dança de Formatura
 
 - A solução resolve todas as subtarefas.
 - Complexidade de tempo: **$O(N \cdot M + P)$**.
@@ -18,7 +18,7 @@ A =
 \end{bmatrix}
 ```
 
-Este é o estado inicial da matriz do problema, e para encontrar o valor em uma posição $i \ j$, a seguinte fórmula pode ser definida:
+Esse é o estado inicial da matriz do problema, e para encontrar o valor em uma posição $i \ j$, a seguinte fórmula pode ser definida:
 
 $$A_{i \ j} = m \cdot (i - 1) + j$$
 
