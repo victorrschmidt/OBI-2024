@@ -1,4 +1,4 @@
-# Jogo
+# Jogo da Vida
 
 - A solução resolve todas as subtarefas.
 - Complexidade de tempo: **$O(N^2 \cdot Q)$**.
