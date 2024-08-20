@@ -1,6 +1,6 @@
 # Jogo do Poder (solução parcial)
 
-- A solução resolve as subtarefas $1$, $2$, $3$ e $5$ ($44$ pontos).
+- A solução resolve as subtarefas $1$, $2$, $3$ e $5$ ($41$ pontos).
 - Complexidade de tempo: **$O(N^2 \cdot M^2 \cdot log(N \cdot M))$**.
 
 Esta solução utiliza um algoritmo de busca em largura (_breadth-first search_) utilizando uma fila de prioridade (_priority queue_).
