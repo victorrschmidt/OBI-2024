@@ -20,7 +20,7 @@ A =
 
 Esse é o estado inicial da matriz do problema, e para encontrar o valor em uma posição $i \ j$, a seguinte fórmula pode ser definida:
 
-$$A_{i \ j} = m \cdot (i - 1) + j$$
+$$a_{i \ j} = m \cdot (i - 1) + j$$
 
 Além disso, iremos armazenar a numeração das linhas e das colunas, que inicialmente estão ordenadas:
 
@@ -30,7 +30,7 @@ $$colunas[\ ] = [1, 2, 3, \ldots, m]$$
 
 Para cada uma das $P$ mudanças entre posições $a$ e $b$, trocaremos os valores do array de linhas ou colunas (dependendo do tipo de troca) nas posições $a$ e $b$. Após $P$ mudanças (possivelmente 0), para encontrar o valor de $A_{i \ j}$ basta utilizar a fórmula mostrada anteriormente, apenas utilizando $i$ e $j$ como posições nos arrays de linhas e colunas:
 
-$$A_{i \ j} = m \cdot (linha[i] - 1) + coluna[j]$$
+$$a_{i \ j} = m \cdot (linha[i] - 1) + coluna[j]$$
 
 Com isso, basta computar as $P$ mudanças e mostrar cada posição da matriz.
 
