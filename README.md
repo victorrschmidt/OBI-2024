@@ -8,7 +8,7 @@
 
 # Sobre
 
-Este repositório contém as submissões das provas da Olimpíada Brasileira de Informática de 2024, em que participei pelo Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - _Campus_ Rio Grande. 
+Este repositório contém as submissões das provas da Olimpíada Brasileira de Informática de 2024, em que participei pelo Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - _Campus_ Rio Grande.
 
 # Resumo
 
@@ -20,4 +20,8 @@ Este repositório contém as submissões das provas da Olimpíada Brasileira de 
 - **Fase 2**
     - [**Caderno de questões**](fase_2/caderno_questoes.pdf)
     - [**Submissões**](fase_2)
-    - **Pontuação:** _341/400_ 
+    - **Pontuação:** _341/400_
+- **Fase 3**
+    - [**Caderno de questões**](fase_3/caderno_questoes.pdf)
+    - [**Submissões**](fase_3)
+    - **Pontuação:** _139/400_
