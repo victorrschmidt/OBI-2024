@@ -2,7 +2,7 @@
 
 - As soluções resolvem as subtarefas 1, 2, 3 e 4 (39 pontos).
 
-A solução se baseia em verificar todos os pares de retas e encontrar o ponto de intersecção. Dadas duas retas $r$ e $s$, tal que:
+As soluções consistem em formar todos os pares de retas, encontrar o $x$ do ponto de intersecção de cada par e verificar se $x$ está no intervalo $[X_{1}, \ X{2}]$. Com base nisso, dadas duas retas $r$ e $s$, tal que:
 
 $$r = a_{r} \cdot x + b_{r}$$
 $$s = a_{s} \cdot x + b_{s}$$
@@ -11,13 +11,13 @@ O ponto de intersecção entre elas é o valor $x$ tal que:
 
 $$x = \frac{b_{s} - b_{r}}{a_{r} - a_{s}}$$
 
-Obs: se o coeficiente angular de $r$ e $s$ forem iguais, ou seja $a_{r} = a_{s}$, as retas não possuem nenhum ponto de intersecção. Nesse caso, consideramos o ponto de intersecção como 'infinito'.
+Observe que se o coeficiente angular de $r$ e $s$ forem iguais, ou seja $a_{r} = a_{s}$, teremos uma divisão por $0$, o que nesse caso significa que as retas não possuem nenhum ponto de intersecção. Nesse cenário, consideramos o ponto de intersecção como "infinito".
 
 ## Subtarefas 1, 2 e 3
 
 - Complexidade de tempo: $O(N^2)$.
 
-Verificamos todos os pares de retas, pegamos a intersecção $x$ entre elas (se existir) e verificamos se $x$ está no intervalo $[X_{1}, \ X_{2}]$. Em caso positivo, incrementamos o contador de intersecções.
+Formamos todos os pares de retas, e para cada um, pegamos a intersecção entre elas e verificamos se $x$ está no intervalo $[X_{1}, \ X_{2}]$. Em caso positivo, incrementamos o contador de intersecções. No final, apenas mostramos o resultado.
 
 ### Solução
 
@@ -40,8 +40,8 @@ double interseccao(int i, int j) {
 }
 
 int main() {
-    double N, L, R;
-    cin >> N >> L >> R;
+    double N, X1, X2;
+    cin >> N >> X1 >> X2;
     
     for (int i = 0; i < N; i++) {
         cin >> v[i].a >> v[i].b;
@@ -53,13 +53,13 @@ int main() {
         for (int j = i + 1; j < N; j++) {
             double x = interseccao(i, j);
             
-            if (L <= x && x <= R) {
+            if (X1 <= x && x <= X2) {
                 resp++;
             }
         }
     }
     
-    cout << resp << nl;
+    cout << resp << '\n';
     
     return 0;
 }
@@ -69,7 +69,7 @@ int main() {
 
 - Complexidade de tempo: $O(N)$.
 
-Essa subtarefa especifica que o coeficiente angular das primeiras $N - 1$ retas é igual, ou seja, elas não se interseccionam entre si. Portanto, precisamos apenas parear as primeiras $N - 1$ retas com a última reta, e verificar se existe intersecção.
+Essa subtarefa especifica que o coeficiente angular das primeiras $N - 1$ retas é igual, ou seja, elas não possuem nenhum ponto de intersecção entre si. Portanto, precisamos apenas parear as primeiras $N - 1$ retas com a última, e para cada par, verificar se existe intersecção.
 
 ### Solução
 
@@ -92,8 +92,8 @@ double interseccao(int i, int j) {
 }
 
 int main() {
-    double N, L, R;
-    cin >> N >> L >> R;
+    double N, X1, X2;
+    cin >> N >> X1 >> X2;
     
     for (int i = 0; i < N; i++) {
         cin >> v[i].a >> v[i].b;
@@ -104,7 +104,7 @@ int main() {
     for (int i = 0; i < N - 1; i++) {
         double x = interseccao(i, N - 1);
             
-        if (L <= x && x <= R) {
+        if (X1 <= x && x <= X2) {
             resp++;
         }
     }
