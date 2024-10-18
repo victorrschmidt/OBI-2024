@@ -13,6 +13,7 @@ Este repositório contém as submissões das provas da Olimpíada Brasileira de 
 # Resumo
 
 - **Modalidade:** Programação Nível Sênior
+- **Colocação:** 80° lugar de 1.487 competidores
 - **Fase 1**
     - [**Caderno de questões**](fase_1/caderno_questoes.pdf)
     - [**Submissões**](fase_1)
